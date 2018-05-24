@@ -11,15 +11,18 @@ if len (sys.argv) > 1:
 	try:
 		numberoftimes = int(sys.argv[1])
 	except ValueError:
-		print("Argument not a number\n\nUsage: python3 badwords.py custom_number")
+		print("Argument not a number\nUsage: python3 badwords.py custom_number(1 to 25s)")
 		exit()
 
+	numberoftimes = int(sys.argv[1])
+	if(numberoftimes>15):	# Limiting because of the limit of 450 requests per 15 minutes
+		numberoftimes = 15
 	print("Tweets count: " + str(numberoftimes))
 else:
 	numberoftimes = 1
-	print("Default tweet count: 1\n\nFor custom number of tweets:\nUsage: python3 badwords.py custom_number")
+	print("Default tweet count: 1\nFor custom number(1 to 25) of tweets:\nUsage: python3 badwords.py custom_number")
 
-print("\nComparing with " + str(numberoftimes) + " number of tweet(s)")
+print("Comparing with " + str(numberoftimes) + " number of tweet(s)")
 
 badwords = []
 for line in open("badwords.txt"):
@@ -43,8 +46,8 @@ auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-print ("type: {0}\nValue = {1}".format(type(numberoftimes),numberoftimes))
-int(numberoftimes)
+# print ("type: {0}\nValue = {1}".format(type(numberoftimes),numberoftimes))
+
 count = 1
 
 for status in tweepy.Cursor(api.home_timeline).items(numberoftimes):
