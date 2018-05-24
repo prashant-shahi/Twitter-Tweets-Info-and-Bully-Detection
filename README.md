@@ -5,9 +5,9 @@ This application detects if it is a bully and also displays tweet information su
 
 ## Built using :
 
-  Python Interpretor - General-Purpose Programming Language
-  Twitter API - Exploiting API provided by Twitter with the help ot Tweepy
-  Tweepy - Twitter API connector for python
+	Python Interpretor - General-Purpose Programming Language
+	Twitter API - Exploiting API provided by Twitter with the help ot Tweepy
+	Tweepy - Twitter API connector for Python
 
 
 ## Set up environment for using this repo:
@@ -25,12 +25,10 @@ This application detects if it is a bully and also displays tweet information su
 ## Run :
   Usage:
     python3 badwords custom_number
-
-	Run the python file
     For single tweet:
-      `python3 badwords.py`
+	`python3 badwords.py`
     For multiple tweets(max 15 at once): 
-      `python3 badwords.py 7`
+    	`python3 badwords.py 7`
 
 ### Screenshot :
 
