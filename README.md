@@ -18,7 +18,7 @@ This application detects if it is a bully and also displays tweet information su
 	Install pip for Python v3
 		`sudo apt-get install python3-pip`
 			
-	Import bson for handling ObjectId and Pymongo for database connector
+	Import tweepy as Twitter API connector
 		`pip install tweepy`
 		
 
