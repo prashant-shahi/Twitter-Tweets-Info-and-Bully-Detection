@@ -23,12 +23,13 @@ This application detects if it is a bully and also displays tweet information su
 		
 
 ## Run :
-  Usage:
-    python3 badwords custom_number
-    For single tweet:
-	`python3 badwords.py`
-    For multiple tweets(max 15 at once): 
-    	`python3 badwords.py 7`
+	Usage:
+		python3 badwords custom_number
+		
+	For single tweet:
+		`python3 badwords.py`
+	For multiple tweets(max 15 at once):
+		`python3 badwords.py 7`
 
 ### Screenshot :
 
