@@ -12,14 +12,16 @@ This application detects if it is a bully and also displays tweet information su
 
 ## Set up environment for using this repo:
 
+*For analyzing your own Twitter Account instead of the default test account. Go to `developer.Twitter.com` and obtain your access keys and consumer keys to replace the default ones.*
+
 	Install Python3 ( If you don't have already )
-		`sudo apt-get install python3`
+		sudo apt-get install python3
 		
 	Install pip for Python v3
-		`sudo apt-get install python3-pip`
+		sudo apt-get install python3-pip
 			
 	Import tweepy as Twitter API connector
-		`pip install tweepy`
+		pip3 install tweepy
 		
 
 ## Run :
@@ -27,9 +29,9 @@ This application detects if it is a bully and also displays tweet information su
 		python3 badwords custom_number
 		
 	For single tweet:
-		`python3 badwords.py`
+		python3 badwords.py
 	For multiple tweets(max 15 at once):
-		`python3 badwords.py 7`
+		python3 badwords.py 7
 
 ### Screenshot :
 
