@@ -1,4 +1,5 @@
-# Twitter-Tweets-Info-and-Bully-Detection [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/CoolBoi567/Twitter-Tweets-Info-and-Bully-Detection/blob/master/LICENSE)
+# Twitter-Tweets-Info-and-Bully-Detection
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/CoolBoi567/Twitter-Tweets-Info-and-Bully-Detection/blob/master/LICENSE)
 
 This application detects if it is a bully and also displays tweet information such as name of uploader and count of retweets, favourites and followers.
 
